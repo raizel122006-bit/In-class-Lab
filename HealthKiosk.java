@@ -10,6 +10,8 @@ public class HealthKiosk
         double bmi_rounded = 0;   
         int tablets = 0;             
         int metric_value = 0; 
+        double degrees = 0;  
+        double radians = 0;
         //Task1
         System.out.println("Enter service code (P/L/T/C):");
         char service_code = scanner.nextLine().charAt(0);
@@ -90,8 +92,8 @@ public class HealthKiosk
         {
             //For Trig helper
             System.out.print("Enter angle in degrees: ");
-            double degrees = scanner.nextDouble();
-            double radians = Math.toRadians(degrees);
+            degrees = scanner.nextDouble();
+            radians = Math.toRadians(degrees);
 
             double sin_value = Math.round(Math.sin(radians) * 1000) / 1000.0;
             double cos_value = Math.round(Math.cos(radians) * 1000) / 1000.0;
